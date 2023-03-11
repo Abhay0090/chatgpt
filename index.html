@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>You Are Good</title>
+	<title>Intelligence Test</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+	<h1>Intelligence Test</h1>
 	<div class="container">
-		<h1 id="message"></h1>
-		<button id="btn" onclick="reload()">I'm Not</button>
+		<div class="buttons">
+			<button class="btn" onclick="showIntelligence('genius')">I am a genius</button>
+			<button class="btn" onclick="showIntelligence('intellectual')">I am an intellectual</button>
+			<button class="btn" onclick="showIntelligence('brainiac')">I am a brainiac</button>
+			<button class="btn" onclick="showIntelligence('prodigy')">I am a prodigy</button>
+			<button class="btn" onclick="showIntelligence('savant')">I am a savant</button>
+		</div>
 	</div>
 
 	<script src="script.js"></script>
