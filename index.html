@@ -1,40 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Random Cars</title>
-	<style>
-		body {
-			margin: 0;
-			padding: 0;
-			overflow: hidden;
-		}
-		.car-container {
-			position: absolute;
-			top: 50%;
-			left: 0;
-			height: 200px;
-			width: 100%;
-			transform: translateY(-50%);
-			animation: move 10s linear infinite;
-		}
-		.car {
-			height: 100%;
-			margin-right: 10px;
-			object-fit: contain;
-		}
-		@keyframes move {
-			from { transform: translateX(100%); }
-			to { transform: translateX(-100%); }
-		}
-	</style>
+	<title>You Are Good</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<div class="car-container">
-		<img class="car" src="https://source.unsplash.com/featured/?cars" alt="car">
-		<img class="car" src="https://source.unsplash.com/featured/?cars" alt="car">
-		<img class="car" src="https://source.unsplash.com/featured/?cars" alt="car">
-		<img class="car" src="https://source.unsplash.com/featured/?cars" alt="car">
-		<img class="car" src="https://source.unsplash.com/featured/?cars" alt="car">
+	<div class="container">
+		<h1 id="message"></h1>
+		<button id="btn" onclick="reload()">I'm Not</button>
 	</div>
+
+	<script src="script.js"></script>
 </body>
 </html>
