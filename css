@@ -1,0 +1,55 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+#message {
+	font-size: 4rem;
+	color: #333;
+	animation: animate-message 2s ease-in-out infinite;
+}
+
+@keyframes animate-message {
+	0% {
+		transform: rotate(0deg);
+	}
+	25% {
+		transform: rotate(10deg);
+	}
+	50% {
+		transform: rotate(0deg);
+	}
+	75% {
+		transform: rotate(-10deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+#btn {
+	margin-top: 2rem;
+	padding: 1rem 2rem;
+	font-size: 1.5rem;
+	background-color: #333;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+}
+
+#btn:hover {
+	background-color: #fff;
+	color: #333;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
